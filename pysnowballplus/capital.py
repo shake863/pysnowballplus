@@ -1,8 +1,8 @@
 import json
 import os
-from pysnowball import cons
-from pysnowball import api_ref
-from pysnowball import utls
+from pysnowballplus import cons
+from pysnowballplus import api_ref
+from pysnowballplus import utls
 
 
 def margin(symbol, page=1, size=180):

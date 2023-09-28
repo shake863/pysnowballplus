@@ -2,7 +2,7 @@ import requests
 import json
 from datetime import datetime
 
-import pysnowball.token as token
+import pysnowballplus.token as token
 
 
 def fetch(url, host="stock.xueqiu.com"):

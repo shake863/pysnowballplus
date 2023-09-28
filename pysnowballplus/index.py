@@ -1,7 +1,7 @@
 from datetime import datetime
 from datetime import timedelta
-from pysnowball import api_ref
-from pysnowball import utls
+from pysnowballplus import api_ref
+from pysnowballplus import utls
 
 
 def index_basic_info(symbols):

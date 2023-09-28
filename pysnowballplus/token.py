@@ -1,5 +1,5 @@
 import os
-import pysnowball.cons as cons
+import pysnowballplus.cons as cons
 
 def get_token():
     if os.environ.get('XUEQIUTOKEN') is None:

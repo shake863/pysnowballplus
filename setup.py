@@ -6,13 +6,13 @@ import setuptools
 #     long_description = fh.read()
 
 long_desc = """
-# pysnowball
+# pysnowballplus
 ===============
 
 ## quick start
 
 ```python
->>> import pysnowball as ball
+>>> import pysnowballplus as ball
 >>> ball.set_token('xq_a_token=651af***************031c96a315c;')
 'xq_a_token=651af***************031c96a315c;'
 >>> ball.cash_flow('SH600000')

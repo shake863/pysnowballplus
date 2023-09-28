@@ -8,8 +8,8 @@ import os
 import logging
 from bs4 import BeautifulSoup
 
-from pysnowball import utls
-from pysnowball import api_ref
+from pysnowballplus import utls
+from pysnowballplus import api_ref
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)

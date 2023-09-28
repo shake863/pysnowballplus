@@ -1,5 +1,5 @@
-from pysnowball import api_ref
-from pysnowball import utls
+from pysnowballplus import api_ref
+from pysnowballplus import utls
 
 def watch_list():
     url = api_ref.watch_list

@@ -1,7 +1,7 @@
 import time
-from pysnowball import cons
-from pysnowball import api_ref
-from pysnowball import utls
+from pysnowballplus import cons
+from pysnowballplus import api_ref
+from pysnowballplus import utls
 
 
 def quotec(symbols):

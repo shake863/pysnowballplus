@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from pysnowball import fund
+from pysnowballplus import fund
 
 test_fund_code = "008975"
 
