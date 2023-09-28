@@ -1,6 +1,7 @@
-# pysnowball
+# pysnowballplus
 
-> 雪球APP Python API (需要自取token)
+> 雪球APP Python API (需要自取token)   
+> fork from [pysnowball](https://github.com/uname-yang/pysnowball)
 
 ## 快速指引
 
@@ -21,15 +22,8 @@ pip install pysnowballplus
 
 调用API前需要手动获取雪球网站的token,使用set_token设置token后才能访问雪球的API。
 
-传送门 === [如何获取雪球token](https://blog.crackcreed.com/diy-xue-qiu-app-shu-ju-api/)
+雪球PC数据的验证信息在请求头的Cookie中，将`xq_a_token=xxx;`部分加入请求即可通过登录验证。
 
-## 联系作者
-
-> 欢迎加入Users微信群，方便讨论使用方面的问题，新需求，以及量化交易相关的内容。 共同进步！
-
-![img](https://blog.crackcreed.com/content/images/2021/02/wechat_me-1.jpg)
-
-![wx](https://github.com/uname-yang/pysnowball/blob/master/wx.png?raw=true)
 
 ## APIs
 
