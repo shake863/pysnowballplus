@@ -33,6 +33,7 @@ def watch_stock_todf(stock_dict):
                      pd.to_datetime(stocks_df.created, unit='ms', utc=True).dt.tz_convert(bj_tz))
     return stocks_df
 
+
 def quotec_todf(quotec_dict):
     """
 
@@ -42,11 +43,11 @@ def quotec_todf(quotec_dict):
     df = pd.DataFrame(quotec_dict['data'])
     timestamp_idx = df.columns.get_loc('timestamp')
     df.insert(timestamp_idx, 'datetime',
-                     pd.to_datetime(df.timestamp, unit='ms', utc=True).dt.tz_convert(bj_tz))
+              pd.to_datetime(df.timestamp, unit='ms', utc=True).dt.tz_convert(bj_tz))
     return df
 
-def pankou_todf(pankou_dict):
 
+def pankou_todf(pankou_dict):
     # print(pankou_dict)
 
     df = pd.DataFrame([pankou_dict['data']])
@@ -57,9 +58,8 @@ def pankou_todf(pankou_dict):
 
 
 def quote_detail_todf(detail_dict, need_all=False):
-
     # print(detail_dict['data']['market'])
-    print(detail_dict['data']['quote'])
+    # print(detail_dict['data']['quote'])
     # print(detail_dict['data']['others'])
     # print(detail_dict['data']['tags'])
 
@@ -76,3 +76,19 @@ def quote_detail_todf(detail_dict, need_all=False):
         return (quote_df, market_df, others_df, tags_df)
     else:
         return quote_df
+
+
+def minute_todf(minute_dict):
+    df = pd.DataFrame(minute_dict['data']['items'])
+    timestamp_idx = df.columns.get_loc('timestamp')
+    df.insert(timestamp_idx, 'datetime',
+              pd.to_datetime(df.timestamp, unit='ms', utc=True).dt.tz_convert(bj_tz))
+    return df
+
+
+def trade_todf(trade_dict):
+    df = pd.DataFrame(trade_dict['data']['items'])
+    timestamp_idx = df.columns.get_loc('timestamp')
+    df.insert(timestamp_idx, 'datetime',
+              pd.to_datetime(df.timestamp, unit='ms', utc=True).dt.tz_convert(bj_tz))
+    return df

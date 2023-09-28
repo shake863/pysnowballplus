@@ -38,6 +38,8 @@ realtime_quote_detail = "https://stock.xueqiu.com/v5/stock/quote.json?extend=det
 # kline
 
 kline = "https://stock.xueqiu.com/v5/stock/chart/kline.json?symbol={}&begin={}&period=day&type=before&count=-{}&indicator=kline,pe,pb,ps,pcf,market_capital,agt,ggt,balance"
+minute = "https://stock.xueqiu.com/v5/stock/chart/minute.json?symbol={}&period=1d"
+trade = "https://stock.xueqiu.com/v5/stock/history/trade.json?symbol={}&count={}"
 
 # user
 watch_list = "https://stock.xueqiu.com/v5/stock/portfolio/list.json?system=true"
