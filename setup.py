@@ -75,20 +75,20 @@ def read_install_requires():
     return reqs
 
 setuptools.setup(
-    name="pysnowball",
-    version="0.1.2",
-    author="Yang Yu",
-    author_email="yang.lights@hotmail.com",
+    name="pysnowballplus",
+    version="0.1",
+    author="adan chou",
+    author_email="shake863@gmail.com",
     description="xueqiu api python client | 集成雪球API",
     long_description=long_desc,
     long_description_content_type="text/markdown",
-    url="https://github.com/uname-yang/pysnowball",
+    url="https://github.com/shake863/pysnowballplus",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    keywords=('Financial Data','XueQiu','Snow Ball','雪球','Python Api'),
+    keywords=('Financial Data','XueQiu','Snow Ball','雪球','Python Api', 'dataFrame', 'Pandas'),
     install_requires=read_install_requires(),
 )
