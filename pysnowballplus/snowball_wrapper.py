@@ -17,6 +17,8 @@ def kline_todf(kline_dict):
     timestamp_idx = df.columns.get_loc('timestamp')
     df.insert(timestamp_idx, 'datetime',
               pd.to_datetime(df.timestamp, unit='ms', utc=True).dt.tz_convert(bj_tz))
+    df['date'] = df.datetime.dt.date
+    df.set_index('date', inplace=True)
     return df
 
 
